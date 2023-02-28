@@ -19,9 +19,17 @@ dependencies {
 
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.0.3'
 
+	//grpc
 	implementation group: 'com.sp.grpc', name: 'banking-grpc', version: '0.0.2'
+	implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.22.0'
+	implementation group: 'io.grpc', name: 'grpc-netty', version: '1.53.0'
+	implementation group: 'net.devh', name: 'grpc-server-spring-boot-starter', version: '2.14.0.RELEASE'
 
+
+
+//lombok
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.26'
+
 
 
 }
