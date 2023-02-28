@@ -9,12 +9,19 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '19'
 
 repositories {
+	mavenLocal()
 	mavenCentral()
+
 }
 
 dependencies {
 
+
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '3.0.3'
+
+	implementation group: 'com.sp.grpc', name: 'banking-grpc', version: '0.0.2'
+
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.26'
 
 
 }
